@@ -1,0 +1,108 @@
+{
+    "user": {
+        "create": 
+                {
+                    "handler": [
+                        {
+                            "class": "\\Dummy\\Handler\\GenOne",
+                            "method": "execute",
+                            "attributes": {
+                                "table": "test_table_1"
+                            },
+                            "validator": [
+                                {
+                                    "class": "\\Dummy\\Validator"
+                                }
+                            ],
+                            "event": [
+                                {
+                                    "class": "\\Dummy\\Event"
+                                }
+                            ]
+                        },
+                        {
+                            "class": "\\Dummy\\Handler\\GenTwo",
+                            "method": "execute",
+                            "attributes": {
+                                "table": "test_table_2"
+                            },
+                            "validator": [
+                                {
+                                    "class": "\\Dummy\\Validator"
+                                }
+                            ],
+                            "event": [
+                                {
+                                    "class": "\\Dummy\\Event"
+                                }
+                            ]
+                        }                        
+                    ]
+                }
+    },
+    "template_comm": {
+        "create": {
+            "handler": [
+                {
+                    "class": "\\Stg\\Raneko\\Handler\\EntityGeneric",
+                    "method": "execute",
+                    "attributes": {
+                        "table": "stg_template_comm"
+                    },
+                    "validator": [
+                        {
+                            "class": "\\Stg\\Raneko\\Handler\\Validator\\Request\\Generic"
+                        }
+                    ],
+                    "event": [
+                        {
+                            "class": "\\Stg\\Raneko\\Handler\\Event\\Response\\Generic"
+                        }
+                    ]
+                }
+            ]
+        },
+        "update": {
+            "handler": [
+                {
+                    "class": "\\Stg\\Raneko\\Handler\\EntityGeneric",
+                    "method": "execute",
+                    "attributes": {
+                        "table": "stg_template_comm"
+                    },
+                    "validator": [
+                        {
+                            "class": "\\Stg\\Raneko\\Handler\\Validator\\Request\\Generic"
+                        }
+                    ],
+                    "event": [
+                        {
+                            "class": "\\Stg\\Raneko\\Handler\\Event\\Response\\Generic"
+                        }
+                    ]
+                }
+            ]
+        },
+        "delete": {
+            "handler": [
+                {
+                    "class": "\\Stg\\Raneko\\Handler\\EntityGeneric",
+                    "method": "execute",
+                    "attributes": {
+                        "table": "stg_template_comm"
+                    },
+                    "validator": [
+                        {
+                            "class": "\\Stg\\Raneko\\Handler\\Validator\\Request\\Generic"
+                        }
+                    ],
+                    "event": [
+                        {
+                            "class": "\\Stg\\Raneko\\Handler\\Event\\Response\\Generic"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
