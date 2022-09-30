@@ -7,11 +7,11 @@
  */
 require_once "vendor/autoload.php";
 
-/* Set environment path */
-\Stg\Raneko\App::setEnvPath("C:/VHOST/source-php/raneko-stg-sample/app");
+/* Set configuration file */
+\Stg\Raneko\App::setConfigIni("C:/VHOST/source-php/raneko-stg-sample/app/app.ini");
 
 /* Put your testing code below this line */
-print_r(\Stg\Raneko\App::getEnvPath());
+print_r(\Stg\Raneko\App::getConfigIni());
 
 /**
  * Preparing entity.
